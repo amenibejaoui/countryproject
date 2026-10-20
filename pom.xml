@@ -15,6 +15,7 @@
 	<description/>
 	<properties>
 		<java.version>21</java.version>
+		<sonar.coverage.exclusions>**/CountryprojectApplication.java</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
