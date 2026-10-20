@@ -22,7 +22,7 @@ import com.countryproject.demo.services.CountryService;
 
 @SpringBootTest(classes= {ControllerMockitoTests.class})
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class ControllerMockitoTests {
+class ControllerMockitoTests {
 	
 	@Mock
 	CountryService countryService;
@@ -35,7 +35,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(1)
-	public void test_getAllCountries() {
+	void test_getAllCountries() {
 		mycountries = new ArrayList<Country>();
 		mycountries.add(new Country(1,"India","Delhi"));
 		mycountries.add(new Country(2,"USA","Washington"));		
@@ -50,7 +50,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(2)
-	public void test_getCountryByID() {
+	void test_getCountryByID() {
 		country = new Country(1,"India","Delhi");
 		
 		int countryID=1;
@@ -64,7 +64,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(3)
-	public void test_getCountryByName() {
+	void test_getCountryByName() {
 		country = new Country(1,"India","Delhi");
 		
 		String countryName="India";
@@ -78,7 +78,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(4)
-	public void test_addCountry() {
+	void test_addCountry() {
 		country = new Country(3,"Germany","Berlin");
 		
 		when(countryService.addCountry(country)).thenReturn(country);//Mocking
@@ -91,7 +91,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(5)
-	public void test_updateCountry() {
+	void test_updateCountry() {
 		country = new Country(3,"Japan","Tokyo");
 		int countryID = 3;
 		
@@ -108,7 +108,7 @@ public class ControllerMockitoTests {
 	
 	@Test
 	@Order(6)
-	public void test_deleteCountry() {
+	void test_deleteCountry() {
 		country = new Country(3,"Japan","Tokyo");
 		int countryID = 3;
 		
