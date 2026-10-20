@@ -60,7 +60,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(1)
-	public void test_getAllCountries() throws Exception {
+	void test_getAllCountries() throws Exception {
 		mycountries = new ArrayList<Country>();
 		mycountries.add(new Country(1,"India","Delhi"));
 		mycountries.add(new Country(2,"USA","Washington"));		
@@ -74,7 +74,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(2)
-	public void test_getCountryByID() throws Exception {
+	void test_getCountryByID() throws Exception {
 		country = new Country(1,"India","Delhi");
 		
 		int countryID=1;
@@ -90,7 +90,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(3)
-	public void test_getCountryByName() throws Exception {
+	void test_getCountryByName() throws Exception {
 		country = new Country(1,"India","Delhi");
 		
 		String countryName="India";
@@ -106,7 +106,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(4)
-	public void test_addCountry() throws Exception {
+	void test_addCountry() throws Exception {
 		country = new Country(3,"Germany","Berlin");
 		
 		when(countryService.addCountry(country)).thenReturn(country);//Mocking
@@ -124,7 +124,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(5)
-	public void test_updateCountry() throws Exception {
+	void test_updateCountry() throws Exception {
 		country = new Country(3,"Japan","Tokyo");
 		int countryID = 3;
 		
@@ -147,7 +147,7 @@ class ControllerMockMvcTests {
 	
 	@Test
 	@Order(6)
-	public void test_deleteCountry() throws Exception {
+	void test_deleteCountry() throws Exception {
 		country = new Country(3,"Japan","Tokyo");
 		int countryID = 3;
 		
