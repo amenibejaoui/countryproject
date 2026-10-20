@@ -54,7 +54,7 @@ class ControllerMockMvcTests {
 	Country country;
 	
 	@BeforeEach
-	public void setUp() {
+	void setUp() {
 		mockMvc=MockMvcBuilders.standaloneSetup(countryController).build();
 	}
 	
