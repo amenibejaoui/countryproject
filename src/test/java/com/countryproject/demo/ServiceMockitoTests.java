@@ -32,7 +32,7 @@ public class ServiceMockitoTests {
 	@InjectMocks
 	CountryService countryService;
 
-	public List<Country> mycountries;
+	
 	
 	@Test
 	@Order(1)
