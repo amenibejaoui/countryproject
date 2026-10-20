@@ -41,7 +41,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest(classes= {ControllerMockMvcTests.class})
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ComponentScan(basePackages = "com.countryservice.demo")
+@ComponentScan(basePackages = "com.countryproject.demo")
 @AutoConfigureMockMvc
 @ContextConfiguration
 //@WebMvcTest(ControllerMockMvcTests.class)
