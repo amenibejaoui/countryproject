@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
-public class ServiceMockitoTests {
+class ServiceMockitoTests {
 	
 	@Mock
 	CountryRepository countryrep;
