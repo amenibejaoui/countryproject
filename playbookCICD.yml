@@ -8,7 +8,7 @@
     image_tag: v1
     dockerfile_path: './'
     docker_registry_username: amenibejaoui
-    docker_registry_password: ameni1Soulaima+
+    docker_registry_password: ameni1SOULAIMA
 
   tasks:
     - name: Log in to Docker Hub
