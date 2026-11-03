@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: countryproject
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: countryproject
+  template:
+    metadata:
+      labels:
+        app: countryproject
+    spec:
+      containers:
+      - name: countryproject-container
+        image: amenibejaoui/countryproject:v2
+        ports:
+        - containerPort: 8095
