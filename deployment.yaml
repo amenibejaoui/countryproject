@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: countryproject-container
-        image: amenibejaoui/countryproject:v2
+        image: amenibejaoui/countryproject:v3
         ports:
         - containerPort: 8095
