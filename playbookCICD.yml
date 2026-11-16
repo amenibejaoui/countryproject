@@ -8,7 +8,7 @@
 
   vars:
     image_name: countryproject
-    image_tag: v2
+    image_tag: v3
     dockerfile_path: './'
 
   tasks:
